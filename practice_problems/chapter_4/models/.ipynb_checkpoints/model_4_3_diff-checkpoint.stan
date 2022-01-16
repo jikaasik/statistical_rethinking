@@ -20,3 +20,8 @@ model {
   // Likelihood
   height ~ normal(alpha + beta * (weight-X_BAR), sigma); //updated
 }
+
+generated quantities {
+  real y_pred[N];
+  y_pred = normal_rng(alpha + beta * (weight-X_BAR), sigma);
+}
