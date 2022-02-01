@@ -36,8 +36,8 @@ transformed parameters {
 model {
   //priors
   alpha ~ normal(40, 30);
-  beta ~ normal(-2, 5);
-  gamma ~ normal(1, 10);
+  beta ~ normal(-3, 5);
+  gamma ~ normal(2, 10);
   sku_slope ~ normal(0, sku_sigma[2]);
   sku_intercept ~ normal(0, sku_sigma[1]); 
   account_slope ~ normal(0, account_sigma[2]);
