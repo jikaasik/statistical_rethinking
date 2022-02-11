@@ -17,7 +17,7 @@ transformed parameters {
   
   for (i in 1:N) {
   
-    mu[i] = alpha + (food[i] - mean(food))*beta + (group_size[i] - mean(group_size))*gamma;
+    mu[i] = alpha + food[i]*beta + group_size[i]*gamma;
     
     }
   }

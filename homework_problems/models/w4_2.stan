@@ -15,7 +15,7 @@ transformed parameters {
   
   for (i in 1:N) {
   
-    mu[i] = alpha + (food[i] - mean(food))*beta;
+    mu[i] = alpha + food[i]*beta;
     
     }
   }
