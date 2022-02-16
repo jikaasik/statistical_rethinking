@@ -2,3 +2,5 @@
 build/
 *.o
 temp.macosx-10.9-x86_64-3.9/
+Pipfile
+Pipfile.lock
